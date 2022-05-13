@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="/style.css"
+    />
+  </head>
+  <body>
+    <center><div id="project"></div></center>
+
+    <script type="module">
+      import project from "/main.js";
+
+      project.attach("#project");
+
+      document.querySelector("#greenFlag").addEventListener("click", () => {
+        project.greenFlag();
+      });
+
+      // Autoplay
+      project.greenFlag();
+    </script>
+    <style>
+      html{
+        background:black;
+      }
+      div{
+        background:#7f7f7f;
+      }
+    </style>
+  </body>
+</html>
